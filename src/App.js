@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Counter from './components/Counter';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div style={{height:'100vh'}} className='d-flex justify-content-center align-items-center w-100 bg-dark'>
+      <div className='bg-light p-5 rounded' style={{width:'500px'}}>
+        <h1 className='text-primary d-flex justify-content-center align-items-center'>Counter Application</h1>
+        <div className='d-flex justify-content-center align-items-center w-100 p-4 mt-4 rounded flex-column'>
+         <Counter/>
+        </div>
+        </div>
+        </div>
   );
 }
 
